@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.0)
 set(CMAKE_C_COMPILER_WORKS 1)
 set(CMAKE_CXX_COMPILER_WORKS 1)
 
-project(stm32_template)
+project(stm32_kb2023)
 
 set(CMAKE_SHARED_LIBRARY_LINK_C_FLAGS)
 set(CMAKE_SHARED_LIBRARY_LINK_CXX_FLAGS)
@@ -46,6 +46,7 @@ add_definitions(-DSTM32F10X_MD)
 
 include_directories(cmsis)
 include_directories(stm32)
+include_directories(lib)
 
 set(SOURCE_FILES
     stm32/startup/startup_stm32f10x_md.c # Choose startup file for your MCU
